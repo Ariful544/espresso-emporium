@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        font-family: "Rancho", cursive;
+    }
+}
+@layer components{
+    .input-container{
+        @apply input mt-3 rounded-[5px] placeholder:text-[#331A15] text-[#331A15] w-full bg-stone-200 focus:border-none focus:ring focus:ring-[#331A15] focus:shadow-md
+    }
+}
