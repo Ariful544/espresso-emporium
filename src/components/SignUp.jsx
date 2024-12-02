@@ -16,7 +16,7 @@ const SignUp = () => {
             console.log(result.user)
             const createdAt = result?.user?.metadata?.creationTime;
             const user = {name, email,createdAt};
-            fetch("http://localhost:3000/add-user",{
+            fetch("https://espresso-emporium-server-36b6arxvl.vercel.app/add-user",{
                 method: "POST",
                 headers:{
                     'content-type': 'application/json',
